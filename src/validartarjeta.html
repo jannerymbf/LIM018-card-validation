@@ -16,7 +16,7 @@
       </section>
       <form>
         <div>
-          <input type="text" placeholder="1234 5678 9123 456">
+          <input type="text" id="creditCardNumber" maxlength="16" onkeypress="return event.charCode>=48 && event.charCode<=57" placeholder="1234 5678 9123 456">
           <p>Número de tarjeta</p>
           <input type="text" placeholder="Ingresa tu nombre">
           <p>Nombre</p>
@@ -26,12 +26,14 @@
           <p>YY</p>
           <input type="text" placeholder="123">
           <p>CVV</p>
-          <button>Validar</button>
+          <button onclick="validator.isValid()">Validar</button>
         </div>
       </form>
+      <button><a href="index.html"><</a></button>
     </main>
     <footer>
       <p>Copyright &copy; Jannery Briceño. All rights reserved.</p>
     </footer>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
