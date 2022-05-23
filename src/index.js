@@ -1,3 +1,12 @@
-import validator from './validator.js';
+import validator from './validator.js'; //dejarlo en la primera línea
 
-//console.log(validator);
+let creditCardNumber=document.getElementById("creditCardNumber");
+let validar=document.getElementById("validar");
+
+validar.addEventListener("click", ()=>{
+    validator.isValid(creditCardNumber.value);
+});
+
+
+
+

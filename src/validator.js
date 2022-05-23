@@ -1,7 +1,6 @@
 const validator = {
-  cardNumber : document.getElementById("creditCardNumber").value,
-  isValid: function(){
-    let arrayCardNumber=Array.from(this.cardNumber);
+  isValid: function(cardNumber){
+    let arrayCardNumber=Array.from(cardNumber);
     let arrayCardNumber2=arrayCardNumber.reverse();
 
   let finalArray=arrayCardNumber2.map(function(element, position) {
@@ -10,7 +9,7 @@ const validator = {
       let newElement=element*2;
       if(newElement>9){
         let numberToString=newElement.toString();
-        let digit1=parseInt(numberToString.cnharAt(numberToString.length-1));
+        let digit1=parseInt(numberToString.charAt(numberToString.length-1));
         let digit2=parseInt(numberToString.charAt(numberToString.length-2));
         let suma=digit1+digit2;
         return suma;
@@ -26,14 +25,11 @@ const validator = {
   let totalNumber=finalArray.reduce((acumulador, valorActual)=>
   acumulador+valorActual,0);
 
-  if (totalNumber%10===0){
-    alert("Numero Valido");
-  }else{
-    alert("Numero Invalido");
-  }
+  return (totalNumber%10===0)?true:false;
 
   }
 };
 
 
 export default validator;
+
