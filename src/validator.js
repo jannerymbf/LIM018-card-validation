@@ -25,6 +25,7 @@ const validator = {
   let totalNumber=finalArray.reduce((acumulador, valorActual)=>
   acumulador+valorActual,0);
 
+  
   return (totalNumber%10===0)?true:false;
 
   }

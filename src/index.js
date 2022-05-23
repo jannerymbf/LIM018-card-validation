@@ -4,8 +4,17 @@ let creditCardNumber=document.getElementById("creditCardNumber");
 let validar=document.getElementById("validar");
 
 validar.addEventListener("click", ()=>{
-    validator.isValid(creditCardNumber.value);
+    let finalMessage=document.getElementById("message");
+    if (validator.isValid(creditCardNumber.value)==true){
+        finalMessage.innerHTML="El número de tarjeta ingresado es válido.";
+    } else {
+        finalMessage.innerHTML="El número de tarjeta ingresado es inválido.";
+    }
 });
+
+
+
+
 
 
 
