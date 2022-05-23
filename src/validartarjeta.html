@@ -4,36 +4,39 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <p>MyMovies</p>
+      <p class="logo">MyMovies</p>
     </header>
     <main>
       <section>
-        <h1>¡Ya estás muy cerca!</h1>
-        <p>Por tu seguridad es necesario validar tu tarjeta de crédito.</p>
+        <h1 class="welcomeMessage2">¡Ya estás muy cerca!</h1>
+        <p class="creditCardMessage">Por tu seguridad es necesario validar tu tarjeta de crédito.</p>
       </section>
       <form>
-        <div>
-          <input type="text" id="creditCardNumber" maxlength="16" onkeypress="return event.charCode>=48 && event.charCode<=57" placeholder="1234 5678 9123 456">
-          <p>Número de tarjeta</p>
+        <div class="formulario">
+          <input class="input number" type="text" id="creditCardNumber" maxlength="16" onkeypress="return event.charCode>=48 && event.charCode<=57" placeholder="1234 5678 9123 456">
+          <p class="text tNumber">Número de tarjeta</p>
           <p id="message"></p>
-          <input type="text" placeholder="Ingresa tu nombre">
-          <p>Nombre</p>
-          <input type="text" placeholder="00">
-          <p>MM</p>
-          <input type="text" placeholder="00">
-          <p>YY</p>
-          <input type="text" placeholder="123">
-          <p>CVV</p>
-          <button type="button" id="validar">Validar</button>
+          <input class="input name" type="text" placeholder="Ingresa tu nombre">
+          <p class="text tName">Nombre</p>
+          <input class="input month" type="text" placeholder="00">
+          <p class="text tMonth">MM</p>
+          <input class="input year" type="text" placeholder="00">
+          <p class="text tYear">YY</p>
+          <input class="input CVV" type="text" placeholder="123">
+          <p class="text tCVV">CVV</p>
+          <button class="validBtn" type="button" id="validar">Validar</button>
         </div>
       </form>
-      <button><a href="index.html">Retornar</a></button>
+      <a href="index.html"><button class="return">Retornar</button></a>
     </main>
     <footer>
-      <p>Copyright &copy; Jannery Briceño. All rights reserved.</p>
+      <p class="pieDePagina footer">Copyright &copy; Jannery Briceño. All rights reserved.</p>
     </footer>
     <script src="index.js" type="module"></script>
   </body>
