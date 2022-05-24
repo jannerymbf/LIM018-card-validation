@@ -20,20 +20,20 @@
       <form>
         <div class="formulario">
           <input class="input number" type="text" id="creditCardNumber" maxlength="16" onkeypress="return event.charCode>=48 && event.charCode<=57" placeholder="1234 5678 9123 456">
-          <p class="text tNumber">Número de tarjeta</p>
-          <p id="message"></p>
+          <p class="text tNumber" id="message">Número de tarjeta</p>
+          <!--<p id="message"></p>-->
           <input class="input name" type="text" placeholder="Ingresa tu nombre">
           <p class="text tName">Nombre</p>
-          <input class="input month" type="text" placeholder="00">
+          <input class="input month" type="text" placeholder="00" maxlength="2" onkeypress="return event.charCode>=48 && event.charCode<=57">
           <p class="text tMonth">MM</p>
-          <input class="input year" type="text" placeholder="00">
+          <input class="input year" type="text" placeholder="00" maxlength="2" onkeypress="return event.charCode>=48 && event.charCode<=57">
           <p class="text tYear">YY</p>
-          <input class="input CVV" type="text" placeholder="123">
+          <input class="input CVV" type="text" placeholder="123" maxlength="3" onkeypress="return event.charCode>=48 && event.charCode<=57">
           <p class="text tCVV">CVV</p>
           <button class="validBtn" type="button" id="validar">Validar</button>
         </div>
       </form>
-      <a href="index.html"><button class="return">Retornar</button></a>
+      <a href="index.html"><button class="return">&#60;</button></a>
     </main>
     <footer>
       <p class="pieDePagina footer">Copyright &copy; Jannery Briceño. All rights reserved.</p>

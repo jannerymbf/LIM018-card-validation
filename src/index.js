@@ -5,11 +5,16 @@ let validar=document.getElementById("validar");
 
 validar.addEventListener("click", ()=>{
     let finalMessage=document.getElementById("message");
-    if (validator.isValid(creditCardNumber.value)==true){
-        finalMessage.innerHTML="El número de tarjeta ingresado es válido.";
-    } else {
-        finalMessage.innerHTML="El número de tarjeta ingresado es inválido.";
+    if(creditCardNumber.value===""){
+        finalMessage.innerHTML="*Ingrese un número de tarjeta.";
+    }else{
+        if (validator.isValid(creditCardNumber.value)===true ){
+            finalMessage.innerHTML="*El número de tarjeta ingresado es válido.";
+        } else {
+            finalMessage.innerHTML="*El número de tarjeta ingresado es inválido.";
+        }
     }
+    
 });
 
 

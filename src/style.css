@@ -4,7 +4,7 @@
 }
 
 .fondo {
-    background-image: url(imagenes/background.jpg);
+    background-image: url(imagenes/background.png);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -110,7 +110,7 @@
   width: 503px;
   height: 240px;
   left: 128px;
-  top: 290px;
+  top: 220px;
   
   font-family: 'Poppins';
   font-style: normal;
@@ -126,7 +126,7 @@
   width: 490px;
   height: 72px;
   left: 128px;
-  top: 551px;
+  top: 481px;
   
   font-family: 'Rubik';
   font-style: normal;
@@ -139,10 +139,10 @@
 
 .formulario {
   position: absolute;
-  width: 618px;
-  height: 714px;
+  width: 608px;
+  height: 634px;
   left: 766px;
-  top: 50px;
+  top: 40px;
   
   background: rgba(133, 193, 226, 0.2);
   border-radius: 50px;
@@ -150,7 +150,7 @@
 
 .input{
   position: absolute;
-  width: 495px;
+  width: 485px;
   height: 72px;
   left: 60px;
   
@@ -193,7 +193,7 @@
 
 .text{
   position: absolute;
-  width: 252px;
+  width: 500px;
   height: 36px;
   left: 60px;
   
@@ -231,9 +231,9 @@
 
 .validBtn{
   position: absolute;
-  width: 495px;
+  width: 450px;
   height: 70px;
-  left: 60px;
+  left: 82px;
   top: 591px;
   cursor: pointer;
   
@@ -250,4 +250,24 @@
   
   
   color: #FFFFFF;
+}
+
+.return{
+  height:70px;
+  width: 70px;
+
+  border-radius: 100px;
+  border-style:none;
+
+  position: absolute;
+  left: 128px;
+  top: 631px;
+
+  background-color: #85C1E2;
+
+  font-family: 'Poppins';
+  font-size:50px;
+  color: #FFFFFF;
+  
+  cursor: pointer;
 }
