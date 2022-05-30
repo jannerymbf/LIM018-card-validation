@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.fondo {
+.backgroundMovies {
     background-image: url(imagenes/background.png);
     height: 100vh;
     width: 100vw;
@@ -44,7 +44,7 @@
   color: #FFFFFF;
 }
 
-.precio {
+.price {
   position: absolute;
   width: 490px;
   height: 72px;
@@ -60,7 +60,7 @@
   color: #FFFFFF;
 }
 
-.empezar {
+.start {
   position: absolute;
   width: 450px;
   height: 70px;
@@ -83,7 +83,7 @@
   color: #FFFFFF;
 }
 
-.pieDePagina {
+.footerMovies {
   position: absolute;
   width: 455px;
   height: 24px;
@@ -101,7 +101,7 @@
   color: #FFFFFF;
 }
 
-.footer {
+.footerMovies2 {
   color: #7F7C7C;
 }
 
@@ -137,7 +137,7 @@
   color: #7F7C7C;
 }
 
-.formulario {
+.formMovies {
   position: absolute;
   width: 608px;
   height: 634px;
@@ -290,4 +290,16 @@
   color: #FFFFFF;
   
   cursor: pointer;
+}
+
+.valid {
+  color : #85C1E2;
+}
+
+.invalid {
+  color: #EA415B;
+}
+
+.textOriginal {
+  color: #7F7C7C;
 }
