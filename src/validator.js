@@ -1,31 +1,39 @@
 const validator = {
   isValid: function(cardNumber){
     let arrayCardNumber=Array.from(cardNumber);
-    let arrayCardNumber2=arrayCardNumber.reverse();
+    let finalSum=0;
     
-    let finalArray=arrayCardNumber2.map(function(element, position) {
-      parseInt(element);
-      if(position%2!==0){
-        let newElement=element*2;
-        if(newElement>9){
-          let numberToString=newElement.toString();
-          let digit1=parseInt(numberToString.charAt(numberToString.length-1));
-          let digit2=parseInt(numberToString.charAt(numberToString.length-2));
-          let suma=digit1+digit2;
-          return suma;
+    for(let i=0; i<arrayCardNumber.length/2; i++){
+      let temporary=arrayCardNumber[i];
+      let reversedIndex=arrayCardNumber.length-i-1;
+      
+      arrayCardNumber[i]=arrayCardNumber[reversedIndex];
+      arrayCardNumber[reversedIndex]=temporary;
+    }
+
+    for(let x=0; x<arrayCardNumber.length;x++){
+      let element=parseInt(arrayCardNumber[x]);
+
+      if(x%2!==0){
+        arrayCardNumber[x]=element*2;
+        if(arrayCardNumber[x]>9){
+          let stringCardDigit=arrayCardNumber[x].toString();
+          let digit1=parseInt(stringCardDigit.charAt(stringCardDigit.length-1));
+          let digit2=parseInt(stringCardDigit.charAt(stringCardDigit.length-2));
+          let sumString=digit1+digit2;
+
+          arrayCardNumber[x]=sumString;
         }else{
-        return newElement;
+          arrayCardNumber[x];
         }
       }else{
-        return parseInt(element);
+        arrayCardNumber[x]=element;
       }
 
-    })
-
-    let totalNumber=finalArray.reduce((acumulador, valorActual)=>
-    acumulador+valorActual,0);
-
-    return (totalNumber%10===0)?true:false;
+      finalSum=arrayCardNumber[x]+finalSum;
+    }
+    
+    return finalSum%10===0;
   },
 
   maskify: function(cardNumber){
@@ -39,16 +47,14 @@ const validator = {
       return cardNumber;
     } else if(cardNumber.length>=5){
       for(let i=0; i<cardNumber.length-4;i++){
-        arrayCard[i]=arrayCard[i].replace(arrayCard[i],"#");
+        let character="#";
+        arrayCard[i]=character;
         newStringCardNumber=arrayCard.toString();
-      }
+      } 
     }
-
     newCardNumber=newStringCardNumber.replace(/,/g,"");
-    return newCardNumber;
+    return newCardNumber;   
   }
-
-
 };
 
 
