@@ -31,8 +31,8 @@ La aplicación de MyMovies permite que los usuarios puedan validar su tarjeta de
 ### Primer prototipo en papel
 
 La siguiente imagen muestra el prototipo inicial del proyecto:
-[PrototipoPapel1](PrototipoPapel1.heic)
-[PrototipoPapel2](PrototipoPapel2.heic)
+![PrototipoPapel1](PrototipoPapel1.jpg)
+![PrototipoPapel2](PrototipoPapel2.jpg)
 
 ### Feedback
 
