@@ -22,15 +22,17 @@ Las siguientes imágenes muestran el aplicativo web en un navegador:
 
 ### Usuarios
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+Los usuarios de la aplicación son personas que disfrutan ver películas desde la comodidad de su hogar, sin embargo, quieren acceder al servicio de forma segura y quieren saber que sus datos son efectivamente válidos y ocultados. 
 
 ### Producto
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+La aplicación de MyMovies permite que los usuarios puedan validar su tarjeta de crédito y enmascarar esta a través de un formulario que les permite ingresar sus datos y un botón que permite realizar ambas funcionalidades. 
 
 ### Primer prototipo en papel
 
 La siguiente imagen muestra el prototipo inicial del proyecto:
+[PrototipoPapel1](PrototipoPapel1.heic)
+[PrototipoPapel2](PrototipoPapel2.heic)
 
 ### Feedback
 
