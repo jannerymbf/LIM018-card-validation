@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="backgroundMovies" class="backgroundMovies">
+      <header>
+        <p id="logo" class="logo">MyMovies</p>
+      </header>
+      <main>
+        <section id="welcome">
+          <h1 class="welcomeMessage">Miles de historias desde la comodidad de tu hogar.</h1>
+          <p class="price">Suscríbete ahora por tan solo S/5.90 PEN al mes.</p>
+          <button id="start" class="start">Empezar</button>
+        </section>
+
+        <section id="creditCard">
+          <div>
+            <h1 class="welcomeMessage2">¡Ya estás muy cerca!</h1>
+            <p class="creditCardMessage">Por tu seguridad es necesario validar tu tarjeta de crédito.</p>
+          </div>
+          <form>
+            <div class="formMovies">
+              <input class="input number" type="text" id="creditCardNumber" maxlength="16" onkeypress="return event.charCode>=48 && event.charCode<=57" placeholder="1234 5678 9123 456">
+              <p class="text tNumber" id="message">Número de tarjeta</p>
+              <!--<p id="message"></p>-->
+              <input class="input name" type="text" id="name" placeholder="Ingresa tu nombre">
+              <p class="text tName">Nombre del titular</p>
+              <input class="input month" type="text" id="month" placeholder="00" maxlength="2" onkeypress="return event.charCode>=48 && event.charCode<=57">
+              <p class="text tMonth">MM</p>
+              <input class="input year" type="text" id="year" placeholder="00" maxlength="2" onkeypress="return event.charCode>=48 && event.charCode<=57">
+              <p class="text tYear">YY</p>
+              <input class="input CVV" type="text" id="CVV" placeholder="123" maxlength="3" onkeypress="return event.charCode>=48 && event.charCode<=57">
+              <p class="text tCVV">CVV</p>
+              <button class="validBtn" type="button" id="validar">Validar</button>
+              <button class="cleanBtn" type="button" id="clean">Limpiar</button>
+            </div>
+          </form>
+          <a href="index.html"><button class="return">&#60;</button></a>
+        </section>
+      </main>
+      <footer>
+        <p id="footerMovies" class="footerMovies">Copyright &copy; Jannery Briceño. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
