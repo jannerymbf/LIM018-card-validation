@@ -5,6 +5,7 @@ let validar=document.getElementById("validar");
 let limpiar=document.getElementById("clean");
 let start=document.getElementById("start");
 let finalMessage=document.getElementById("message");
+let inputsClean=document.querySelectorAll(".input");
 
 start.addEventListener("click", ()=>{
     document.getElementById("backgroundMovies").style.background='none';
@@ -35,7 +36,14 @@ validar.addEventListener("click", ()=>{
 });
 
 limpiar.addEventListener("click", ()=>{
-    window.location.reload();
+    //window.location.reload();
+    inputsClean.forEach(e=>{
+        e.value="";         
+    })
+    
+    finalMessage.classList.remove("valid");
+    finalMessage.classList.remove("invalid");
+    finalMessage.innerHTML="Número de tarjeta";
 });
 
 
