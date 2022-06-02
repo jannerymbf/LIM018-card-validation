@@ -3,7 +3,15 @@ import validator from './validator.js'; //dejarlo en la primera línea
 let creditCardNumber=document.getElementById("creditCardNumber");
 let validar=document.getElementById("validar");
 let limpiar=document.getElementById("clean");
+let start=document.getElementById("start");
 let finalMessage=document.getElementById("message");
+
+start.addEventListener("click", ()=>{
+    document.getElementById("backgroundMovies").style.background='none';
+    document.getElementById("welcome").style.display='none';
+    document.getElementById("footerMovies").style.color='#7F7C7C';
+    document.getElementById("creditCard").style.visibility='visible';
+})
 
 validar.addEventListener("click", ()=>{
     
@@ -27,7 +35,7 @@ validar.addEventListener("click", ()=>{
 });
 
 limpiar.addEventListener("click", ()=>{
-    location.reload();
+    window.location.reload();
 });
 
 

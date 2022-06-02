@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+#creditCard {
+  visibility: hidden;
+}
+
 .backgroundMovies {
     background-image: url(imagenes/background.png);
     height: 100vh;
@@ -21,7 +25,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
-  line-height: 60px;
+  /*line-height: 60px;
 /* identical to box height */
 
 
@@ -94,15 +98,11 @@
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 24px;
+  /*line-height: 24px;
   /* identical to box height */
   
   
   color: #FFFFFF;
-}
-
-.footerMovies2 {
-  color: #7F7C7C;
 }
 
 .welcomeMessage2 {
@@ -162,7 +162,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  line-height: 45px;
+  /*line-height: 45px;
   /* identical to box height */
 
   color: #484848;
@@ -201,7 +201,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 36px;
+  /*line-height: 36px;
   /* identical to box height */
   
   
@@ -245,7 +245,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
-  line-height: 70px;
+  /*line-height: 70px;
   /* identical to box height */
   
   
@@ -268,7 +268,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
-  line-height: 70px;
+  /*line-height: 70px;*/
   color: #EA415B;
 }
 
