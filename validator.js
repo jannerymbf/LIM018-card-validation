@@ -53,7 +53,7 @@ const validator = {
       } 
     }
     newCardNumber=newStringCardNumber.replace(/,/g,"");
-    return newCardNumber;   
+    return newCardNumber;
   }
 };
 
