@@ -16,6 +16,7 @@ Aplicación web que le permite al usuario validar y enmascarar su número de tar
 ## 2. Imagen Final del proyecto
 
 Las siguientes imágenes muestran el aplicativo web en un navegador:
+
 ![ImagenFinal1](ProyectoFinal1.png)
 ![ImagenFinal2](ProyectoFinal2.png)
 
@@ -32,12 +33,14 @@ La aplicación de MyMovies permite que los usuarios puedan validar su tarjeta de
 ### :pencil2: Primer prototipo en papel
 
 La siguiente imagen muestra el prototipo inicial del proyecto:
+
 ![PrototipoPapel1](PrototipoPapel1.jpg)
 ![PrototipoPapel2](PrototipoPapel2.jpg)
 
 ### :computer: Imagen del prototipo final
 
 La siguiente imagen es el prototipo final desarrollado en Figma:
+
 ![PrototipoFinal](PrototipoFinal.png)
 
 ### :hammer_and_wrench: Tecnologías utilizadas
