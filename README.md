@@ -1,10 +1,11 @@
-# Validación de trajeta en MyMovies
+# Validación de tarjeta para MyMovies.com
 
 ## Índice
 
 * [1. Resumen](#1-resumen)
 * [2. Imagen final del proyecto](#2-imagen-final-del-proyecto)
-* [3. Investigación UX](#3-investigacion-UX)
+* [3. Investigación UX](#3-investigación-UX)
+* [4. Acceso al proyecto](#3-github-pages)
 
 ***
 
@@ -20,25 +21,31 @@ Las siguientes imágenes muestran el aplicativo web en un navegador:
 
 ## 3. Investigación UX
 
-### Usuarios
+### :bust_in_silhouette: Usuarios
 
-Los usuarios de la aplicación son personas que disfrutan ver películas desde la comodidad de su hogar, sin embargo, quieren acceder al servicio de forma segura y quieren saber que sus datos son efectivamente válidos y ocultados. 
+Los usuarios de la aplicación son personas que disfrutan ver películas desde la comodidad de su hogar. Los usuarios de MyMovies.com desean acceder al servicio de forma segura y saber que sus datos son efectivamente válidos y ocultados. 
 
-### Producto
+### :package: Producto
 
 La aplicación de MyMovies permite que los usuarios puedan validar su tarjeta de crédito y enmascarar esta a través de un formulario que les permite ingresar sus datos y un botón que permite realizar ambas funcionalidades. 
 
-### Primer prototipo en papel
+### :pencil2: Primer prototipo en papel
 
 La siguiente imagen muestra el prototipo inicial del proyecto:
 ![PrototipoPapel1](PrototipoPapel1.jpg)
 ![PrototipoPapel2](PrototipoPapel2.jpg)
 
-### Feedback
-
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
-
-### Imagen del prototipo final
+### :computer: Imagen del prototipo final
 
 La siguiente imagen es el prototipo final desarrollado en Figma:
 ![PrototipoFinal](PrototipoFinal.png)
+
+### :hammer_and_wrench: Tecnologías utilizadas
+
+* HTML
+* CSS
+* JavaScript
+
+## 4. GitHub Pages
+
+Acceda a la página web mediante el siguiente enlace: https://jannerymbf.github.io/LIM018-card-validation/
